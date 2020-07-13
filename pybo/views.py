@@ -18,9 +18,7 @@ def index(request):
     """
     question_list = Question.objects.order_by('-create_date')
     context = {'question_list': question_list}
-    return render(request, 'pybo/question_list.html', context)
 
-    # 입력 파라미터
     page = request.GET.get('page', '1')  # 페이지
 
     # 조회
@@ -31,6 +29,10 @@ def index(request):
     page_obj = paginator.get_page(page)
 
     context = {'question_list': page_obj}
+    return render(request, 'pybo/question_list.html', context)
+
+    # 입력 파라미터
+
 
 def detail(request, question_id):
     """
