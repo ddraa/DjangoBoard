@@ -1,5 +1,4 @@
 {% load static %}
-<!doctype html>
 <html lang="ko">
 <head>
     <!-- Required meta tags -->
@@ -25,6 +24,11 @@
 <!-- Bootstrap JS -->
 <script src="{% static 'bootstrap.min.js' %}"></script>
 
-</body>
 
+<!-- 자바스크립트 Start -->
+{% block script %}
+{% endblock %}
+<!-- 자바스크립트 End -->
+
+</body>
 </html>
