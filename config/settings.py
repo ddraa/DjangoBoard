@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-ALLOWED_HOSTS = ['13.124.63.245']
 import os
 
 
@@ -26,7 +25,7 @@ SECRET_KEY = 'c2bc2+s7zoseokd9a*j5jjd32o+@4h!xioq8!$w!zypddds=l3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.124.63.245']
 
 
 # Application definition
