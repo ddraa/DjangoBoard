@@ -3,6 +3,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos
 
 db.sqlite3
+.idea
+*.pyc
+__pycache__
 
 ### macOS ###
 # General
